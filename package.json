@@ -1,5 +1,5 @@
 {
-  "name": "discord.js-transcript",
+  "name": "discordjs-transcript",
   "version": "0.0.1",
   "description": "Just a simple module",
   "main": "dist/index.js",
