@@ -81,7 +81,6 @@ export class UserTranscript extends EventEmitter {
 
         const transcript = new Transcript(this.credentials);
 
-
         transcript
             .sendStream(encoded);
 
