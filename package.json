@@ -1,0 +1,33 @@
+{
+  "name": "discord.js-transcript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx tsc && node dist/example/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@aws-sdk/client-transcribe": "^3.398.0",
+    "@aws-sdk/client-transcribe-streaming": "^3.398.0",
+    "@discordjs/voice": "^0.16.0",
+    "@types/events": "^3.0.0",
+    "@types/node": "^20.5.7",
+    "aws-transcribe": "^1.1.1",
+    "canvas": "^2.11.2",
+    "discord.js": "^14.13.0",
+    "dotenv": "^16.3.1",
+    "html-to-image": "^1.11.11",
+    "libsodium-wrappers": "^0.7.11",
+    "microphone-stream": "^6.0.1",
+    "opusscript": "^0.0.8",
+    "pcm-stream": "^1.0.0",
+    "prism-media": "^1.3.5",
+    "puppeteer": "^21.1.1"
+  }
+}
