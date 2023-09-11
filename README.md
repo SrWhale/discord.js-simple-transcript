@@ -1,6 +1,6 @@
 ## About
 
-[Discord.js-transcript](https://github.com/SrWhale/discord.js-transcript) is a powerful [Node.js](https://nodejs.org) module that allows you to easily play games in the discord using [Discord.js](https://github.com/discordjs/discord.js) module.
+[discord.js-simple-transcript](https://github.com/SrWhale/discord.js-simple-transcript) is a powerful [Node.js](https://nodejs.org) module that allows you to easily play games in the discord using [Discord.js](https://github.com/discordjs/discord.js) module.
 Using the [Discord API](https://discord.com/developers/docs/intro).
 
 ## Installation
@@ -8,9 +8,9 @@ Using the [Discord API](https://discord.com/developers/docs/intro).
 **Node.js 16.9.0 or newer is required.**
 
 ```sh-session
-npm install discord.js-transcript
-yarn add discord.js-transcript
-pnpm add discord.js-transcript
+npm install discord.js-simple-transcript
+yarn add discord.js-simple-transcript
+pnpm add discord.js-simple-transcript
 ```
 
 ## AWS Credentials required to use that module
@@ -24,7 +24,7 @@ Also, you need to enable AWS Transcript to have access to Amazon Transcribe. You
 ## Easily example usage (model used for all games)
 
 ```js
-const { UserTranscript } = require('@srwhale/discord-transcript');
+const { UserTranscript } = require('discord.js-simple-transcript');
 
 const { Client, IntentsBitField } = require('discord.js');
 
@@ -63,4 +63,4 @@ client.on('ready', () => {
 
 - [Discord API Discord server](https://discord.gg/discord-api)
 - [GitHub](https://github.com/discordjs/discord.js)
-- [npm](https://www.npmjs.com/package/discord.js-transcript)
+- [npm](https://www.npmjs.com/package/discord.js-simple-transcript)

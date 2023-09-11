@@ -1,6 +1,6 @@
 {
-  "name": "@srwhale/discord-transcript",
-  "version": "0.0.4",
+  "name": "discord.js-simple-transcript",
+  "version": "0.0.1",
   "description": "Just a simple module",
   "main": "dist/index.js",
   "scripts": {
@@ -14,12 +14,12 @@
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SrWhale/discord.js-transcript.git"
+    "url": "git+https://github.com/SrWhale/discord.js-simple-transcript.git"
   },
   "bugs": {
-    "url": "https://github.com/SrWhale/discord.js-transcript/issues"
+    "url": "https://github.com/SrWhale/discord.js-simple-transcript/issues"
   },
-  "homepage": "https://github.com/SrWhale/discord.js-transcript#readme",
+  "homepage": "https://github.com/SrWhale/discord.js-simple-transcript#readme",
   "license": "MIT",
   "devDependencies": {
     "typescript": "^5.2.2"
