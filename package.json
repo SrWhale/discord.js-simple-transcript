@@ -1,13 +1,17 @@
 {
   "name": "@srwhale/discord-transcript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Just a simple module",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsc && node dist/example/index.js"
   },
-  "author": "Paulo Almeida",
+  "author": {
+    "name": "Paulo Almeida",
+    "url": "https://github.com/SrWhale"
+  },
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/SrWhale/discord.js-transcript.git"
