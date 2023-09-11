@@ -24,24 +24,24 @@ Also, you need to enable AWS Transcript to have access to Amazon Transcribe. You
 ## Easily example usage (model used for all games)
 
 ```js
-const { Client, GatewayIntentBits } = require('discord.js');
+const { UserTranscript } = require('@srwhale/discord-transcript');
 
-const client = new Client({ intents: [GatewayIntentBits.Guilds] });
+const { Client, IntentsBitField } = require('discord.js');
 
-const { UserTranscript } = require('discord.js-transcript');
-
-client.on('ready', () => {
-	console.log(`Logged in as ${client.user.tag}!`);
+const client = new Client({
+    intents: [IntentsBitField.Flags.Guilds, IntentsBitField.Flags.GuildMessages, IntentsBitField.Flags.GuildVoiceStates, IntentsBitField.Flags.GuildMembers]
 });
 
-client.on('interactionCreate', async (interaction) => {
-	 const transcript = new UserTranscript({
+client.login(process.env.TOKEN);
+
+client.on('ready', () => {
+    const transcript = new UserTranscript({
         client: client,
-        channel: client.channels.cache.get("ID"),
-        member: client.guilds.cache.get("ID")?.members.cache.get("ID"),
+        channel: client.channels.cache.get("VOICE_CHANNEL_ID"),
+        member: client.guilds.cache.get("GUILD_ID")?.members.cache.get("MEMBER_ID"),
         credentials: {
-            accessKeyId: "AWS_ACCESS_KEY",
-            secretAccessKey: "AWS_SECRET_ACCESS_KEY",
+            accessKeyId: "ACCESS_KEY",
+            secretAccessKey: "SECRET_ACCESS_KEY"
         }
     })
 
@@ -53,11 +53,10 @@ client.on('interactionCreate', async (interaction) => {
         console.log(`MESSAGE STATUS: ${data}`)
     })
         .on('end', () => {
-            console.log("Transcript Finished!")
+            console.log("END")
         })
-});
+})
 
-client.login('token');
 ```
 
 ## Links
