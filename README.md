@@ -52,9 +52,10 @@ client.on('ready', () => {
     transcript.on("data", (data) => {
         console.log(`MESSAGE STATUS: ${data}`)
     })
-        .on('end', () => {
+    
+    .on('end', () => {
             console.log("END")
-        })
+    })
 })
 
 ```
