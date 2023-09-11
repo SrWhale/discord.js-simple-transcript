@@ -14,7 +14,10 @@ pnpm add discord.js-transcript
 ```
 
 ## AWS Credentials required to use that module
-**Aws Credentials are required to use that module. You can get it here: [AWS Console](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/security_credentials)
+
+**Aws Credentials are required to use that module.**
+
+You can get it here: [AWS Console](https://us-east-1.console.aws.amazon.com/iamv2/home?region=us-east-1#/security_credentials)
 
 Also, you need to enable AWS Transcript to have access to Amazon Transcribe. You can do this here: [AWS Transcribe](https://us-east-1.console.aws.amazon.com/transcribe/)
 
